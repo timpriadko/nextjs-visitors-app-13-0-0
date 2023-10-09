@@ -1,0 +1,43 @@
+.form {
+  border-block-start: 0.2rem solid green;
+  border-block-end: 0.4rem solid green;
+  border-inline-start: thick double green;
+  border-inline-end: thick double green;
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.7rem;
+  padding-inline: 1rem;
+  margin-block-end: 2rem;
+  outline-offset: 0.4rem;
+  outline: 5px solid blue;
+}
+
+.formItem {
+  @apply flex justify-center flex-col items-center mb-2;
+
+  label {
+    @apply text-left;
+  }
+
+  input,
+  textarea {
+    @apply border-solid border-2 border-gray-500
+		w-full;
+  }
+}
+
+.error {
+  // @apply text-red-600;
+
+  label {
+    @apply text-red-800;
+  }
+
+  input,
+  textarea {
+    @apply border-red-500;
+  }
+
+  & > div {
+    @apply text-red-600;
+  }
+}
